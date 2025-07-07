@@ -3,7 +3,8 @@
   min-height: 100vh;
   padding: 5vw;
   font-family: sans-serif;
-  background-color: #f9f9f9;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,12 +12,12 @@
 }
 
 .question-box, .result-box {
-  background: white;
+  background: #2c2c2c;
   padding: 6vw;
   max-width: 400px;
   width: 90vw;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   text-align: center;
 }
 
@@ -25,14 +26,15 @@
   padding: 12px;
   width: 100%;
   font-size: 4vw;
-  background-color: #e0f7fa;
-  border: none;
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+  border: 1px solid #555;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .answer-button:hover {
-  background-color: #b2ebf2;
+  background-color: #555;
 }
 
 ul {
