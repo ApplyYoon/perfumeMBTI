@@ -1,20 +1,20 @@
 export const questions = [
   {
-    question: "새로운 장소에 갈 때 나는...",
+    question: "새로운 장소에 갈 때 나는?",
     answers: [
       { text: "설레고 활기차!", types: ["fruit", "perfume"] },
       { text: "조용히 적응해.", types: ["nature", "flower"] },
     ],
   },
   {
-    question: "혼자 있을 때 나는...",
+    question: "혼자 있을 때 나는?",
     answers: [
       { text: "음악 틀고 활동!", types: ["fruit", "iff"] },
       { text: "차분히 정적인 일.", types: ["powder", "flower"] },
     ],
   },
   {
-    question: "향수를 고를 때 나는...",
+    question: "향수를 고를 때 나는?",
     answers: [
       { text: "나를 돋보이게!", types: ["perfume", "france"] },
       { text: "은은하고 편안하게.", types: ["flower", "nature"] },
@@ -28,7 +28,7 @@ export const questions = [
     ],
   },
   {
-    question: "쇼핑할 때 나는...",
+    question: "쇼핑할 때 나는?",
     answers: [
       { text: "신제품이나 트렌드 제품!", types: ["iff", "fruit"] },
       { text: "검증된 스테디셀러!", types: ["powder", "flower"] },
@@ -42,7 +42,7 @@ export const questions = [
     ],
   },
   {
-    question: "내 성격은...",
+    question: "내 성격은?",
     answers: [
       { text: "자유롭고 감각적인 편", types: ["iff", "fruit"] },
       { text: "차분하고 안정적인 편", types: ["powder", "flower"] },
