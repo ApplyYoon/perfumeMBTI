@@ -2,8 +2,7 @@ import React from 'react';
 
 const perfumeMap = {
   fruit: ["레몬", "블랙체리", "바닐라"],
-  flower: ["웨딩데이", "미드나잇자스민", "레몬라벤더"],
-  perfume: ["러브스펠", "샤넬5", "도손"],
+  flower: ["웨딩데이", "미드나잇자스민", "레몬라벤더", "러브스펠", "샤넬5", "도손"],
   nature: ["베이비파우더"],
   powder: ["클린코튼"],
   iff: ["라임바질만다린", "코코마드모아젤"],
@@ -12,7 +11,7 @@ const perfumeMap = {
 
 const labelMap = {
   fruit: "과일",
-  flower: "꽃",
+  flower: "플로럴",
   perfume: "향수",
   nature: "자연",
   powder: "파우더",
