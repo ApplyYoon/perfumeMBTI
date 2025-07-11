@@ -1,19 +1,19 @@
-/* App.css 전체 코드 */
 .app {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   padding: 5vw;
   font-family: sans-serif;
-  background-color: #FEEAEF;
-  color: #f0f0f0;
+  background: url('/bg3.jpg') no-repeat center center;
+  background-size: cover;
+  color: black;
   display: flex;
-  justify-content: center;
+  padding-top: 130px;
   align-items: center;
   flex-direction: column;
 }
 
 .question-box, .result-box {
-  background-color: beige;
+  background-color: rgba(255, 255, 255, 0.026);
   padding: 6vw;
   max-width: 400px;
   width: 90vw;
@@ -21,28 +21,11 @@
   text-align: center;
 }
 
-/* 🎯 질문 박스에 배경 이미지 + 오버레이 */
 .question-box {
   position: relative;
-  background: url('/bg.jpg') no-repeat center center;
   background-size: cover;
-  color: white;
-  padding: 6vw;
-  max-width: 400px;
-  width: 90vw;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  text-align: center;
+  background-color: #fff9f94f;
   overflow: hidden;
-}
-
-.question-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(140, 139, 139, 0.4); /* 어두운 오버레이 */
-  border-radius: 12px;
-  z-index: 0;
 }
 
 .question-box > * {
@@ -50,18 +33,48 @@
   z-index: 1;
 }
 
+h2 {
+  font-size: 19px;
+  padding-bottom: 10px;
+}
+
 .answer-button {
   margin: 10px 0;
   padding: 12px;
   width: 100%;
-  font-size: 4vw;
-  background-color: white;
+  font-size: 15px;
+  background-color: transparent;
   color: black;
   border: 1px solid #555;
   border-radius: 8px;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+  transition: all 0.3s ease;
 }
 
+.answer-button.selected {
+  font-weight: bold;
+  border-color: #000;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.answer-button.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 ul {
   list-style: none;
@@ -74,7 +87,6 @@ li {
   font-weight: bold;
 }
 
-/* ✨ 결과 박스 텍스트 보이도록 조정 */
 .result-box {
-  color: #222; /* 어두운 텍스트로 명확히 */
+  color: black;
 }
